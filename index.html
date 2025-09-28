@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0VFE2T7RWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0VFE2T7RWX');
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Let's Automate</title>
 <style>
   body {
@@ -40,6 +50,52 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  
+  /* Mobile Responsive Design */
+  @media (max-width: 768px) {
+    .articles {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 15px;
+    }
+    
+    .container {
+      padding: 5px;
+    }
+    
+    .header {
+      padding: 15px 10px;
+    }
+    
+    .header p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    
+    .article {
+      padding: 15px;
+    }
+    
+    .article a {
+      font-size: 18px;
+      line-height: 1.4;
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    .article p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    
+    .tag {
+      font-size: 10px;
+      padding: 2px 6px;
+      margin-right: 4px;
+      margin-bottom: 2px;
+      display: inline-block;
+    }
   }
   
   .article {
