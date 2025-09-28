@@ -4,11 +4,11 @@
 <title>Let's Automate</title>
 <style>
   body {
-    font-family: Arial;
+    font-family: Calibri;
     background: #0d1117;
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
   }
   
   .container {
@@ -16,123 +16,77 @@
     margin: 0 auto;
   }
   
-  .top-buttons {
+  .header {
     text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .top-buttons a {
     background: #21262d;
-    color: white;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 6px;
-    border: 1px solid #30363d;
-    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
   }
   
-  .medium-btn {
+  .header a {
     background: #238636;
+    color: white;
+    padding: 5px 10px;
+    margin: 3px;
+    text-decoration: none;
   }
   
   h1 {
-    text-align: center;
-    font-size: 40px;
     color: #58a6ff;
-  }
-  
-  .intro {
-    text-align: center;
-    margin-bottom: 40px;
-    background: #21262d;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #30363d;
+    margin: 0;
   }
   
   .articles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
   }
   
   .article {
     background: #21262d;
-    border: 1px solid #30363d;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
   }
   
   .number {
     position: absolute;
-    top: -10px;
-    right: 15px;
+    top: -6px;
+    right: 8px;
     background: #58a6ff;
     color: black;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
+    font-size: 11px;
   }
   
   .article a {
     color: #58a6ff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    display: block;
-    margin-bottom: 10px;
-    padding-right: 40px;
+    font-size: 13px;
+    padding-right: 25px;
   }
   
   .article p {
     margin: 0;
     color: #c9d1d9;
-    line-height: 1.5;
-  }
-  
-  .tags {
-    margin-top: 15px;
+    font-size: 11px;
   }
   
   .tag {
     background: rgba(88, 166, 255, 0.2);
     color: #58a6ff;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    margin-right: 8px;
-    display: inline-block;
-    margin-bottom: 5px;
+    padding: 1px 4px;
+    font-size: 9px;
+    margin-right: 3px;
   }
   
   footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     color: gray;
-    padding: 30px;
-    border-top: 1px solid #30363d;
-  }
-  
-  /* Mobile phones */
-  @media (max-width: 800px) {
-    .articles {
-      grid-template-columns: 1fr;
-    }
-    
-    .top-buttons a {
-      display: block;
-      margin: 8px auto;
-      width: 80%;
-    }
-    
-    h1 {
-      font-size: 30px;
-    }
   }
 </style>
 </head>
@@ -140,156 +94,120 @@
 
 <div class="container">
 
-<div class="top-buttons">
-    <a href="https://github.com/aiqualitylab" target="_blank">🚀 GitHub Projects</a>
-    <a href="https://medium.com/@letsautomate" target="_blank" class="medium-btn">📝 Follow on Medium</a>
-    <a href="https://medium.com/ai-in-quality-assurance" target="_blank" class="medium-btn">📚 AQE Publication</a>
-</div>
-
+<div class="header">
 <h1>Let's Automate</h1>
-
-<div class="intro">
-<p>Hi! 👋 Welcome to my corner of the internet. I'm passionate about revolutionizing software quality through AI and automation.</p>
-<p>🤖 Exploring the intersection of AI and software testing, I share insights on how GenAI is transforming quality assurance - from smart test automation frameworks to effective prompt engineering for testing scenarios.</p>
-<p>🚀 <strong>Dive into my latest research, tutorials, and thought leadership on AI-powered quality engineering!</strong></p>
-<p style="color: gray; margin-top: 20px;">📊 12 articles published</p>
+<p>🚀 AI-Powered Quality Engineering • 📊 12 Articles • 🤖 GenAI Testing Insights</p>
+<a href="https://github.com/aiqualitylab">🚀 GitHub</a>
+<a href="https://medium.com/@letsautomate">📝 Medium</a>
+<a href="https://medium.com/ai-in-quality-assurance">📚 Publication</a>
 </div>
 
 <div class="articles">
 
 <div class="article">
   <div class="number">1</div>
-  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-test-automation-turns-jira-requirements-into-end-to-end-tests-using-langgraph-cypress-c5a832e9a7e1" target="_blank">AI-Powered Test Automation</a>
+  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-test-automation-turns-jira-requirements-into-end-to-end-tests-using-langgraph-cypress-c5a832e9a7e1">AI-Powered Test Automation</a>
   <p>Turn JIRA Requirements Into End-To-End Tests Using LangGraph And Cypress.</p>
-  <div class="tags">
-    <span class="tag">LangGraph</span>
-    <span class="tag">Cypress</span>
-    <span class="tag">JIRA</span>
-  </div>
+  <span class="tag">LangGraph</span>
+  <span class="tag">Cypress</span>
+  <span class="tag">JIRA</span>
 </div>
 
 <div class="article">
   <div class="number">2</div>
-  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-qa-automation-cypress-and-playwright-revolution-e85ef4336f8e" target="_blank">AI-Powered QA Automation: Cypress And Playwright Revolution 🚀</a>
-  <p>Instead of spending hours writing and debugging test code, an AI generates complete test suites for both Cypress and Playwright in minutes.</p>
-  <div class="tags">
-    <span class="tag">Cypress</span>
-    <span class="tag">Playwright</span>
-    <span class="tag">AI Generation</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-qa-automation-cypress-and-playwright-revolution-e85ef4336f8e">AI-Powered QA Automation Revolution 🚀</a>
+  <p>AI generates complete test suites for both Cypress and Playwright in minutes.</p>
+  <span class="tag">Cypress</span>
+  <span class="tag">Playwright</span>
+  <span class="tag">AI Generation</span>
 </div>
 
 <div class="article">
   <div class="number">3</div>
-  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-triple-framework-test-automation-67288fdf6323" target="_blank">AI-Powered Triple Framework Test Automation</a>
-  <p>The evolution is complete — introducing our Triple Framework AI-Powered QA Automation System! 🎉✨ 🚀 From Dual to Triple: The Ultimate QA Automation Revolution</p>
-  <div class="tags">
-    <span class="tag">Multi-Framework</span>
-    <span class="tag">AI-Powered</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/ai-powered-triple-framework-test-automation-67288fdf6323">AI-Powered Triple Framework Test Automation</a>
+  <p>Triple Framework AI-Powered QA Automation System! From Dual to Triple Revolution</p>
+  <span class="tag">Multi-Framework</span>
+  <span class="tag">AI-Powered</span>
 </div>
 
 <div class="article">
   <div class="number">4</div>
-  <a href="https://medium.com/ai-in-quality-assurance/ai-terms-every-qa-engineer-must-know-in-2025-02ebc840c664" target="_blank">Testing AI-Based Systems — A QA Perspective</a>
-  <p>Important : AI Terms Every QA Engineer Must Know</p>
-  <div class="tags">
-    <span class="tag">AI Terms</span>
-    <span class="tag">QA Fundamentals</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/ai-terms-every-qa-engineer-must-know-in-2025-02ebc840c664">Testing AI-Based Systems — A QA Perspective</a>
+  <p>AI Terms Every QA Engineer Must Know</p>
+  <span class="tag">AI Terms</span>
+  <span class="tag">QA Fundamentals</span>
 </div>
 
 <div class="article">
   <div class="number">5</div>
-  <a href="https://medium.com/gopenai/langchain-langgraph-and-langsmith-a-qa-perspective-51336477f4ea" target="_blank">LangChain, LangGraph, and LangSmith: A QA Perspective</a>
-  <p>QA Perspective : LangChain, LangGraph, and LangSmith</p>
-  <div class="tags">
-    <span class="tag">LangChain</span>
-    <span class="tag">LangGraph</span>
-    <span class="tag">LangSmith</span>
-  </div>
+  <a href="https://medium.com/gopenai/langchain-langgraph-and-langsmith-a-qa-perspective-51336477f4ea">LangChain, LangGraph, and LangSmith: A QA Perspective</a>
+  <p>QA Perspective on LangChain, LangGraph, and LangSmith</p>
+  <span class="tag">LangChain</span>
+  <span class="tag">LangGraph</span>
+  <span class="tag">LangSmith</span>
 </div>
 
 <div class="article">
   <div class="number">6</div>
-  <a href="https://medium.com/gopenai/rag-testing-guide-for-qa-teams-0f5bd3655af8" target="_blank">RAG Testing Guide for QA Teams</a>
+  <a href="https://medium.com/gopenai/rag-testing-guide-for-qa-teams-0f5bd3655af8">RAG Testing Guide for QA Teams</a>
   <p>RAG testing is about trust and verification</p>
-  <div class="tags">
-    <span class="tag">RAG</span>
-    <span class="tag">Testing Guide</span>
-  </div>
+  <span class="tag">RAG</span>
+  <span class="tag">Testing Guide</span>
 </div>
 
 <div class="article">
   <div class="number">7</div>
-  <a href="https://medium.com/ai-in-quality-assurance/tag-vs-rag-in-ai-powered-quality-assurance-a-practical-guide-for-qa-professionals-dc1f35d99830" target="_blank">TAG vs RAG in AI-Powered Quality Assurance</a>
-  <p>A beginner-friendly guide to TAG and RAG for Quality Assurance teams ✨</p>
-  <div class="tags">
-    <span class="tag">TAG</span>
-    <span class="tag">RAG</span>
-    <span class="tag">Beginner Guide</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/tag-vs-rag-in-ai-powered-quality-assurance-a-practical-guide-for-qa-professionals-dc1f35d99830">TAG vs RAG in AI-Powered Quality Assurance</a>
+  <p>Beginner-friendly guide to TAG and RAG for QA teams</p>
+  <span class="tag">TAG</span>
+  <span class="tag">RAG</span>
+  <span class="tag">Guide</span>
 </div>
 
 <div class="article">
   <div class="number">8</div>
-  <a href="https://blog.gopenai.com/autogen-vs-langchain-a-qa-professionals-curious-perspective-c9bae2145ee8" target="_blank">AutoGen vs LangChain: A Testing Professional's Analysis</a>
-  <p>Have you ever considered how modern AI frameworks like AutoGen and LangChain could integrate into your testing workflows? While these tools might initially seem like complex developer resources, they actually align well with familiar QA activities.</p>
-  <div class="tags">
-    <span class="tag">AutoGen</span>
-    <span class="tag">LangChain</span>
-    <span class="tag">Comparison</span>
-  </div>
+  <a href="https://blog.gopenai.com/autogen-vs-langchain-a-qa-professionals-curious-perspective-c9bae2145ee8">AutoGen vs LangChain: A Testing Professional's Analysis</a>
+  <p>How AI frameworks like AutoGen and LangChain integrate into testing workflows</p>
+  <span class="tag">AutoGen</span>
+  <span class="tag">LangChain</span>
 </div>
 
 <div class="article">
   <div class="number">9</div>
-  <a href="https://medium.com/ai-in-quality-assurance/what-is-ai-qa-engineering-and-why-qaes-sdets-and-qa-automation-engineers-should-pay-attention-e8d26e460153" target="_blank">The Rise of AI-Powered Quality Engineering 🌟</a>
-  <p>AI-Powered Quality Engineering merges machine learning with software validation to reshape how we ensure product reliability. This isn't about replacing testing professionals — it's about amplifying their capabilities.</p>
-  <div class="tags">
-    <span class="tag">AI-QE</span>
-    <span class="tag">Quality Engineering</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/what-is-ai-qa-engineering-and-why-qaes-sdets-and-qa-automation-engineers-should-pay-attention-e8d26e460153">The Rise of AI-Powered Quality Engineering 🌟</a>
+  <p>AI-QE merges machine learning with software validation to amplify capabilities</p>
+  <span class="tag">AI-QE</span>
+  <span class="tag">Quality Engineering</span>
 </div>
 
 <div class="article">
   <div class="number">10</div>
-  <a href="https://medium.com/ai-in-quality-assurance/roadmap-for-the-adoption-of-generative-ai-in-software-testing-dc6b105b4851" target="_blank">Roadmap for GenAI Adoption in Software Testing</a>
-  <p>A strategic roadmap for organizations looking to integrate Generative AI into their software testing processes. Emphasizes well-defined strategy, LLM selection, data quality, and compliance considerations.</p>
-  <div class="tags">
-    <span class="tag">GenAI</span>
-    <span class="tag">Strategy</span>
-    <span class="tag">Roadmap</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/roadmap-for-the-adoption-of-generative-ai-in-software-testing-dc6b105b4851">Roadmap for GenAI Adoption in Software Testing</a>
+  <p>Strategic roadmap for integrating GenAI into testing processes</p>
+  <span class="tag">GenAI</span>
+  <span class="tag">Strategy</span>
 </div>
 
 <div class="article">
   <div class="number">11</div>
-  <a href="https://blog.gopenai.com/crafting-effective-prompts-for-genai-in-software-testing-e5f76d2ccbf6" target="_blank">Crafting Effective Prompts for GenAI in Testing</a>
-  <p>Key components of effective prompts for Generative AI models in software testing. Understanding Role, Context, Instruction, Input Data, Constraints, and Output Format for improved accuracy and relevance.</p>
-  <div class="tags">
-    <span class="tag">Prompt Engineering</span>
-    <span class="tag">GenAI</span>
-  </div>
+  <a href="https://blog.gopenai.com/crafting-effective-prompts-for-genai-in-software-testing-e5f76d2ccbf6">Crafting Effective Prompts for GenAI in Testing</a>
+  <p>Key components for effective GenAI prompts in software testing</p>
+  <span class="tag">Prompt Engineering</span>
+  <span class="tag">GenAI</span>
 </div>
 
 <div class="article">
   <div class="number">12</div>
-  <a href="https://medium.com/ai-in-quality-assurance/ai-regulations-standards-and-frameworks-for-software-testing-ca6c51115c1a" target="_blank">AI Regulations, Standards, and Frameworks</a>
-  <p>To effectively address the risks associated with GenAI, organizations should proactively adopt and adhere to relevant industry standards and emerging regulations for managing AI systems and ensuring accountability.</p>
-  <div class="tags">
-    <span class="tag">Regulations</span>
-    <span class="tag">Standards</span>
-    <span class="tag">Compliance</span>
-  </div>
+  <a href="https://medium.com/ai-in-quality-assurance/ai-regulations-standards-and-frameworks-for-software-testing-ca6c51115c1a">AI Regulations, Standards, and Frameworks</a>
+  <p>Industry standards and regulations for managing AI systems</p>
+  <span class="tag">Regulations</span>
+  <span class="tag">Standards</span>
 </div>
 
 </div>
 
 <footer>
-&copy; 2025 Let's Automate | <a href="https://aiqualityengineer.com" style="color:#58a6ff;text-decoration:none;">aiqualityengineer.com</a>
-<br><br>
-<p style="font-size: 14px; margin-top: 10px;">🚀 Empowering QA professionals with AI-driven insights and automation strategies</p>
+&copy; 2025 Let's Automate | <a href="https://aiqualityengineer.com" style="color:#58a6ff;">aiqualityengineer.com</a>
 </footer>
 
 </div>
